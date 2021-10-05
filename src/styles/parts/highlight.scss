@@ -1,0 +1,65 @@
+.highlight {
+  background-image: url("https://picsum.photos/1920/720");
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &__container {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    &--content {
+      width: 40%;
+
+      &-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+
+      &-text {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: 20px;
+      }
+
+      &-wrapper-buttons {
+        display: flex;
+      }
+    }
+
+    &--second-content {
+      display: flex;
+      align-items: center;
+      align-self: end;
+
+      &-icon-back{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .2s linear;
+
+        &:hover{
+          background: #f2f2f275;
+
+          & > i {
+            transform: rotate(380deg)
+          }
+        }
+
+        & > i{
+          transition: all .5s linear;
+          font-size: 1.5rem;
+        }
+      }
+
+      &-age-group {
+        width: 150px;
+      }
+    }
+  }
+}

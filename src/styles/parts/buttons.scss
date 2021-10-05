@@ -1,0 +1,53 @@
+$button-watch-bg: #fff;
+$button-info-bg: rgba(109, 109, 110, 0.7);
+
+.button-watch {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0.5rem 3rem;
+  background: $button-watch-bg;
+  border-radius: 5px;
+  color: $text-color-black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: linear-gradient(45deg, $background, $background-list);
+    color: $text-color;
+
+    & > i {
+      color: $text-color;
+    }
+  }
+
+  & > i {
+    margin-right: 10px;
+    color: #000;
+  }
+}
+
+.button-info {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0.5rem 3rem;
+  background: $button-info-bg;
+  border-radius: 5px;
+  color: $text-color;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: linear-gradient(45deg, $background, $background-list);
+    color: $text-color;
+
+    & > i {
+      color: $text-color;
+    }
+  }
+
+  & > i {
+    margin-right: 10px;
+  }
+}

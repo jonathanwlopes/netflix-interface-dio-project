@@ -1,0 +1,156 @@
+.header {
+  // background: $background;
+  &__container {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+
+    &--logo {
+      width: 100px;
+      max-height: 40px;
+      height: auto;
+      margin-right: 2rem;
+      border-radius: 5px;
+    }
+
+    &--navigation {
+      flex: 1;
+    }
+
+    &--list {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+    }
+
+    &--list-item {
+      cursor: pointer;
+    }
+
+    &--secondary-navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 150px;
+
+      &--text {
+        color: $text-color-list;
+        font-size: 1.6rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $text-color;
+        }
+      }
+
+      &--text-small {
+        color: $text-color-list;
+        font-size: 1.2rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $text-color;
+        }
+      }
+
+      &-list {
+        position: absolute;
+        background: $background-list;
+        border: 1px solid $border-list;
+        border-top: 2px solid $border-list-contrast;
+        right: 0;
+        top: 45px;
+        min-width: 400px;
+
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f0de";
+          font-size: 2.4rem;
+          position: absolute;
+          top: -18px;
+          right: 3px;
+          cursor: pointer;
+        }
+
+        &-item {
+          padding: 10px;
+          cursor: pointer;
+          
+          & + li {
+            border-top: 1px solid $border-list;
+          }
+
+          &:hover{
+            background: $background-list-hover;
+          }
+        }
+
+        &-wrapper-box {
+          display: flex;
+          align-items: center;
+
+          &-image {
+            width: 112px;
+            height: 63px;
+            margin-right: 20px;
+            border-radius: 10px;
+          }
+        }
+
+        &-wrapper-text {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &-icon-search {
+        & > i {
+          cursor: pointer;
+          font-size: 2.4rem;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $hover-icons;
+          }
+        }
+      }
+
+      &-icon-notification {
+        position: relative;
+
+        &:hover {
+          .header__container--secondary-navigation-list {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        & > i {
+          cursor: pointer;
+          font-size: 2.4rem;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $hover-icons;
+          }
+        }
+      }
+
+      &-profile-image {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        & > i {
+          font-size: 1.6rem;
+        }
+
+        & > img {
+          margin-right: 15px;
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

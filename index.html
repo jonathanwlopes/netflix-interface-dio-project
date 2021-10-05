@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <title>Netflix Interface - project dio</title>
+  </head>
+  <body class="home-page">
+    <section class="highlight">
+      <header class="header">
+        <div class="container-center header__container">
+          <a href="#"><img class="header__container--logo" src="https://picsum.photos/200/100" alt="Logo" /></a>
+          <nav class="header__container--navigation">
+            <ul class="header__container--list">
+              <a href="#"><li class="header__container--list-item">Início</li></a>
+
+              <a href="#"><li class="header__container--list-item">Séries</li></a>
+
+              <a href="#"><li class="header__container--list-item">Filmes</li></a>
+
+              <a href="#"><li class="header__container--list-item">Bombando</li></a>
+
+              <a href="#"><li class="header__container--list-item">Minha lista</li></a>
+            </ul>
+          </nav>
+          <div class="header__container--secondary-navigation">
+            <div class="header__container--secondary-navigation-icon-search">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="header__container--secondary-navigation-icon-notification">
+              <i class="fas fa-bell"></i>
+              <ul class="header__container--secondary-navigation-list no-visible">
+                <li class="header__container--secondary-navigation-list-item">
+                  <div class="header__container--secondary-navigation-list-wrapper-box">
+                    <img class="header__container--secondary-navigation-list-wrapper-box-image" src="https://picsum.photos/112/63" alt="Novidade" />
+                    <div class="header__container--secondary-navigation-list-wrapper-text">
+                      <span class="header__container--secondary-navigation--text">Novidade</span>
+                      <span class="header__container--secondary-navigation--text">Os Vingadores</span>
+                      <span class="header__container--secondary-navigation--text-small">há 1 dia</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="header__container--secondary-navigation-list-item">
+                  <div class="header__container--secondary-navigation-list-wrapper-box">
+                    <img class="header__container--secondary-navigation-list-wrapper-box-image" src="https://picsum.photos/112/63" alt="Novidade" />
+                    <div class="header__container--secondary-navigation-list-wrapper-text">
+                      <span class="header__container--secondary-navigation--text">Novidade</span>
+                      <span class="header__container--secondary-navigation--text">Baki Hamma</span>
+                      <span class="header__container--secondary-navigation--text-small">há 2 dias</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="header__container--secondary-navigation-profile-image">
+              <img src="https://picsum.photos/50/50" alt="Imagem de Perfil" />
+              <i class="fas fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <article class="container-center highlight__container">
+        <div class="highlight__container--content">
+          <h1 class="highlight__container--content-title">Os Vingadores</h1>
+          <p class="highlight__container--content-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni recusandae veritatis architecto debitis enim in ea labore doloribus odio
+            molestias laboriosam id ut vero, quo, molestiae asperiores, sed praesentium cumque.
+          </p>
+          <div class="highlight__container--content-wrapper-buttons">
+            <div class="button-watch">
+              <i class="fas fa-play"></i>
+              <button type="button">Assistir</button>
+            </div>
+
+            <div class="button-info">
+              <i class="fas fa-info-circle"></i>
+              <button type="button">Mais Informações</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight__container--second-content">
+          <div class="highlight__container--second-content-icon-back">
+            <i class="fas fa-undo-alt"></i>
+          </div>
+          <div class="highlight__container--second-content-age-group">
+            <img src="https://picsum.photos/50/50" src="Age" />
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="./src/modules/awsome.js"></script>
+  </body>
+</html>
