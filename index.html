@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>Netflix Interface - project dio</title>
   </head>
   <body class="home-page">
@@ -65,6 +66,7 @@
           </div>
         </div>
       </header>
+
       <article class="container-center highlight__container">
         <div class="highlight__container--content">
           <h1 class="highlight__container--content-title">Os Vingadores</h1>
@@ -94,7 +96,61 @@
           </div>
         </div>
       </article>
+
+      <article class="container-center highlight__top">
+        <h3 class="highlight__top--title">Top 10 no Brasil hoje</h3>
+
+        <div class="swiper highlight__top--slide-container">
+          <ul class="swiper-wrapper highlight__top--list">
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number" class="highlight__top-item-number">1</span>
+              <img class="highlight__top--item-image" src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">2</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">3</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">4</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">5</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">6</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">7</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">8</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">9</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+            <li class="swiper-slide highlight__top--item">
+              <span class="highlight__top--item-number">10</span>
+              <img src="https://picsum.photos/150/200" alt="Top Um" />
+            </li>
+          </ul>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </article>
     </section>
+
     <script src="./src/modules/awsome.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./src/modules/slides.js"></script>
   </body>
 </html>

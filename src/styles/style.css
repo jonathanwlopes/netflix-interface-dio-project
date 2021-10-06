@@ -219,12 +219,12 @@ button {
 }
 
 .highlight {
-  background-image: url("https://picsum.photos/1920/720");
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%), url("https://picsum.photos/1920/720");
   background-repeat: no-repeat;
   background-size: auto;
 }
 .highlight__container {
-  padding: 5rem 0;
+  padding: 10rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -258,17 +258,46 @@ button {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s linear;
+  margin-right: 15px;
 }
 .highlight__container--second-content-icon-back:hover {
   background: #f2f2f275;
 }
 .highlight__container--second-content-icon-back:hover > i {
-  transform: rotate(380deg);
+  transform: scaleX(-1) rotate(380deg);
 }
 .highlight__container--second-content-icon-back > i {
   transition: all 0.5s linear;
   font-size: 1.5rem;
+  transform: scaleX(-1);
 }
 .highlight__container--second-content-age-group {
+  display: flex;
   width: 150px;
+  background: #202025b2;
+  border-left: 2px solid #DCDCDC;
+  padding-left: 15px;
+}
+.highlight__container--second-content-age-group > img {
+  border-radius: 5px;
+  width: 40px;
+  height: auto;
+}
+.highlight__top--slide-container {
+  width: 100%;
+}
+.highlight__top--list {
+  display: flex;
+}
+.highlight__top--item {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+.highlight__top--item-number {
+  font-size: 50px;
+}
+.highlight__top--item-image {
+  max-width: 150px;
+  min-height: 200px;
 }
