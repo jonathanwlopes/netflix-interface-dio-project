@@ -1,5 +1,7 @@
 $age-group-bg: #202025b2;
 $age-group-border: #dcdcdc;
+$arrows-color: #dcdcdc;
+$arrows-size: 3rem;
 
 .highlight {
   background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("https://picsum.photos/1920/720");
@@ -78,17 +80,43 @@ $age-group-border: #dcdcdc;
   }
 
   &__top {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $arrows-color;
+      opacity: 0;
+      transition: all 0.3s ease;
+      &:after {
+        font-size: $arrows-size;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: 37px;
+    }
+
+    &:hover {
+      .swiper-button-next,
+      .swiper-button-prev {
+        opacity: 1;
+      }
+    }
+
+    &--title {
+      font-size: 2.4rem;
+      opacity: 0.9;
+    }
+
     &--slide-container {
       width: 100%;
+      text-align: center;
     }
-    
+
     &--list {
       display: flex;
     }
 
     &--item {
-      padding: 10px;
-      margin: 5px;
       cursor: pointer;
 
       &-number {
